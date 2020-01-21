@@ -300,12 +300,17 @@ border-bottom-right-radius: 6px;
 .home-custom {
   flex: 1;
   background-color: #fff;
-    max-height: 292px;
-    min-height: 292px;
-    min-width: 228px;
-    margin: 8px;
-    cursor: pointer;
+  max-height: 292px;
+  min-height: 292px;
+  min-width: 228px;
+  margin: 8px;
+  cursor: pointer;
   text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
 }
 
 /* ****** Section 1 *******  */
@@ -322,16 +327,15 @@ https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=tru
 
 .img-div {
     height: 300px;
-    width: 300px;
+    width: 460px;
+}
+
+.bdBaSqft-div {
+  align-self: center;
 }
 
 .home-section-1 .img-div {
   background: url('https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=true') no-repeat center; 
-  flex direction: column;
- /*float: right;*/
-  
- 
-
 }
 
 .home-section-1 .price-div {
@@ -389,7 +393,7 @@ https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=tru
     line-height: 40px;
     font-size: 21px;
     letter-spacing: 1px;
-  text-align: right;
+    text-align: right;
 
 }
 
@@ -414,7 +418,7 @@ https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=tru
     position: relative;
     bottom: 22px;
     left: 5px;
-  text-align: right;
+    text-align: right;
 }
 
 /* ****** Section 3 *******  */
@@ -432,7 +436,7 @@ https://github.com/kenvantruong/real-estate/blob/master/img-houses/1.png?raw=tru
     line-height: 40px;
     font-size: 21px;
     letter-spacing: 1px;
-text-align: right;
+    text-align: right;
 }
 
 .home-section-3 .bdBaSqft-div {
@@ -959,6 +963,8 @@ h1 {
     border-radius: 20px;
     margin-bottom: 20px;
     background: rgba(110,116,141,.2);
+    justify-content: flex-end;
+
 }
 
 /* HOME SUBMIT */
@@ -1039,6 +1045,11 @@ h1 {
 
 
 
+.homes-list-platform {
+
+  justify-content: flex-end;
+
+}
 
 
 
