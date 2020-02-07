@@ -1,0 +1,494 @@
+<PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <title>
+   Blend | issue 09</title>
+  <style type="text/css">
+    div,p,a,li,td{
+    			-webkit-text-size-adjust:none;
+    		}
+    		*{
+    			-webkit-font-smoothing:antialiased;
+    			-moz-osx-font-smoothing:grayscale;
+    		}
+
+
+            @import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body {
+  height: 100%;
+}
+
+
+
+.fond2{
+
+height: 20vh;
+display:block;
+width:auto;
+margin-left:auto;
+margin-right:auto;
+
+
+}
+
+.header{
+    background: url("design.jpg") center center fixed;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+}
+.header .overlay{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+
+.header .navbar-default {
+    background-color:transparent !important;
+    border-color:transparent;
+    background-image:none;
+    box-shadow:none;    
+}
+.header .navbar-default .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.header .navbar-default .navbar-nav>li>a {
+   font-size:25px; 
+   color:#6d071a;
+    border-bottom: 1px solid transparent
+}
+.header .navbar-default .navbar-nav>li:hover a{
+   
+   
+}
+
+
+.header .navbar-toggle {
+      margin:10px 0; 
+      background:white; 
+      color:white;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image: url(neige.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+}
+
+body {
+    background: url("https://static.stereogum.com/uploads/2016/10/Kendrick-Lamar-in-the-Cypher-1476221238-640x360.jpg");
+    background-size: cover;
+    font-family: Arial; 
+    color: white;
+
+  
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  
+}
+
+ul li {
+    float: right;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    opacity: .8;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 150px
+
+   
+
+
+
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+ul li a:hover {
+        background-color: none;
+
+
+    
+}
+
+ul li ul li {
+    display: none;
+
+
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+
+
+    		.ReadMsgBody{
+    			width:100%;
+    			background-color:#ffffff;
+    		}
+    		.ExternalClass{
+    			width:100%;
+    			background-color:#ffffff;
+    		}
+    		body{
+    			width:100%;
+    			height:100%;
+    			background-color:#ffffff;
+    			margin:0;
+    			padding:0;
+    			-webkit-font-smoothing:antialiased;
+    		}
+    		html{
+    			width:100%;
+    			background-color:#ffffff;
+    		}
+    		p{
+    			padding:0!important;
+    			margin-top:0!important;
+    			margin-right:0!important;
+    			margin-bottom:0!important;
+    			margin-left:0!important;
+    		}
+    		.hover:hover{
+    			opacity:0.85;
+    			filter:alpha(opacity=85);
+    		}
+    		.underline:hover{
+    			text-decoration:underline!important;
+    		}
+    		#BtnTransp{
+    			background:rgba(255, 255, 255, 0.21);
+    		}
+    		#logo img{
+    			width:170px;
+    			height:auto;
+    		}
+    		.image600 img{
+    			width:600px;
+    			height:auto;
+    		}
+    		.img120 img{
+    			width:120px;
+    			height:auto;
+    		}
+    		.image176 img{
+    			width:176px;
+    			height:auto;
+    		}
+    		.image130 img{
+    			width:130px;
+    			height:auto;
+    		}
+    		.image110 img{
+    			width:110px;
+    			height:auto;
+    		}
+    		.image222 img{
+    			width:222px;
+    			height:auto;
+    		}
+    		.image167 img{
+    			width:167px;
+    			height:auto;
+    		}
+    		.image128 img{
+    			width:128px;
+    			height:auto;
+    		}
+    		.image285 img{
+    			width:285px;
+    			height:auto;
+    		}
+    		.image90 img{
+    			width:90px;
+    			height:auto;
+    		}
+    		.image34 img{
+    			width:34px;
+    			height:auto;
+    		}
+    		.image16 img{
+    			width:16px;
+    			height:auto;
+    		}
+    		.appleLinksWhite a {color: #ffffff !important; text-decoration: none;} 
+    		.appleLinksGrey a{color: rgb(88, 89, 91); font-size: 13px; text-decoration: none;}
+    	@media only screen and (max-width: 640px){
+    		body{
+    			width:auto!important;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		table[class=full]{
+    			width:100%!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		table[class=mobile]{
+    			width:100%!important;
+    			padding-left:30px;
+    			padding-right:30px;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		table[class=fullCenter]{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		td[class=fullCenter]{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		.erase{
+    			display:none;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		.buttonScale{
+    			float:none!important;
+    			text-align:center!important;
+    			display:inline-block!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		.buttonScale2{
+    			float:none!important;
+    			text-align:center!important;
+    			display:inline-block!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		.image600 img{
+    			width:100%!important;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		td[class=h40]{
+    			height:40px!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		*[class=h20]{
+    			width:100%!important;
+    			height:20px!important;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		table[class=sponsor]{
+    			text-align:center;
+    			float:none;
+    			width:360px;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		table[class=mcenter]{
+    			text-align:center;
+    			vertical-align:middle;
+    			clear:both!important;
+    			float:none;
+    			margin:0px!important;
+    		}
+    
+    }	@media only screen and (max-width: 640px){
+    		.pad20{
+    			padding-left:20px!important;
+    			padding-right:20px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		body{
+    			width:auto!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=full]{
+    			width:100%!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=mobile]{
+    			width:100%!important;
+    			padding-left:20px;
+    			padding-right:20px;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=fullCenter]{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		td[class=fullCenter]{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.erase{
+    			display:none;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.buttonScale{
+    			float:none!important;
+    			text-align:center!important;
+    			display:inline-block!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.buttonScale2{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.eraseMob{
+    			display:none!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.font30{
+    			font-size:30px!important;
+    			line-height:34px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.image600 img{
+    			width:100%!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.image128 img{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.image285 img{
+    			width:100%!important;
+    			text-align:center!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		td[class=h40]{
+    			height:30px!important;
+    			clear:both;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=mcenter]{
+    			text-align:center;
+    			vertical-align:middle;
+    			clear:both!important;
+    			float:none;
+    			margin:0px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		*[class=h20]{
+    			width:100%!important;
+    			height:20px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=sponsor]{
+    			text-align:center;
+    			float:none;
+    			width:260px;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		table[class=mcenter2]{
+    			text-align:center;
+    			vertical-align:middle;
+    			clear:both!important;
+    			float:none;
+    			margin:0px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.pad20{
+    			padding-left:20px!important;
+    			padding-right:20px!important;
+    		}
+    
+    }	@media only screen and (max-width: 479px){
+    		.w25{
+    			width:25px!important;
+    		}
+    
+    }		body{
+    			background:none !important;
+    		}
+  </style>
+ 
+</head>
