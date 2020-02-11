@@ -1,4 +1,10 @@
-.fond2{
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+
+  .fond2{
 
 height: 20vh;
 display:block;
@@ -10,213 +16,96 @@ margin-right:auto;
 }
 
 
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    background-image: url('neige.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+    
+    /* Background styles */
+    background-color: #6d071a
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
-
-body header {
-
- background-image:"design.jpg";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: transparent;
-  padding: 25px 20px;
-  text-align: center;
-}
-body header .brand {
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  color: #57f197;
-}
-body header .site-nav {
-
-  position: absolute;
-  background: #ddd;
-  top: 100%;
-  right: 15px;
-  left: 15px;
-  text-align: center;
-  border-radius: 3px 3px 3px;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.2), 0 15px 35px rgba(50, 50, 93, 0.5), 0 5px 15px rgba(0, 0, 0, 0.2);
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 100ms ease-in-out;
-}
-body header ul {
-  list-style: none;
-}
-body header li {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-body header li:last-child {
-  border-bottom: none;
-}
-body header a {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1em;
-  font-size: 18px;
-  font-weight: 500;
-  display: block;
-}
-body header a:active, body header a:hover {
-  color: #6d071a;
-}
-body header .login {
-  background: #6d071a;
-  border-radius: 3px;
-  padding: 5px;
-  margin: 5px 8em;
-}
-body header .login:hover {
-  color: #fff;
-}
-body .nav-burger:checked ~ .site-nav {
-  transform: scale(1, 1);
-  transition: transform 100ms ease-in-out;
-}
-body .nav-burger:checked ~ .burger-bar :first-child {
-  opacity: 0;
-}
-body .nav-burger:checked ~ .burger-bar span {
-  transform: rotate(45deg);
-}
-body .nav-burger:checked ~ .burger-bar :last-child {
-  transform: translateY(-8px) rotate(-45deg);
-}
-body .nav-burger {
-  display: none;
-}
-body .burger-bar {
-  position: absolute;
-  width: 25px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 5px;
-  margin-left: 15px;
-  cursor: pointer;
-}
-body .burger-bar span {
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  border-radius: 5px;
-  margin: 3px;
-}
-body .burger-bar span:nth-child(1) {
-  transform: skewX(-4deg);
-}
-body .banner {
-  padding: 20vh 0;
-}
-body .banner .intro {
-  background: transparent;
-  padding: 20px;
-  margin: 0 auto;
-  width: 70%;
-}
-body .banner h3 {
-  text-transform: capitalize;
-  text-align: left;
-  padding: 15px 0;
-  font-size: 20px;
-  color: #ddd;
-}
-body .banner p {
-  font-size: 17px;
-  color: #ddd;
-}
-body .banner .banner-button {
-  padding-top: 25px;
-}
-body .banner .banner-button button {
-  padding: 8px 10px;
-  margin-right: 20px;
-  background: #57f197;
-  border: transparent;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #fff;
-  cursor: pointer;
-}
-body .banner .banner-button button:hover {
-  color: #000000;
-}
-@media (min-width: 660px) {
-  body #bg img {
-    display: block;
-  }
-  body header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  body header .burger-bar {
-    display: none;
-  }
-  body header .site-nav {
-    transform: none;
-    height: auto;
-    position: relative;
-    background: transparent;
-    box-shadow: none;
-    right: 0;
-  }
-  body header .site-nav li {
-    display: inline-block;
-    border: none;
-  }
-  body header .site-nav a {
-    padding: 8px 0;
-    margin-left: 2em;
-  }
-  body header .site-nav a:focus {
-    text-decoration: underline;
-    color: #eb975b;
-  }
-  body header .site-nav .login {
-    padding: 5px 1em;
-  }
-  body header .site-nav .login:focus, body header .site-nav .login:hover {
-    text-decoration: none;
-  }
-  body .banner {
-    display: grid;
-    grid-template-columns: 10px repeat(5, 1fr) 10px;
-    justify-items: start;
-  }
-  body .banner .intro {
-    grid-column: 2/6;
-    align-self: flex-start;
-  }
-}
-
-
-
-}
-
-body {
-  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
-}
-
-body {
-    background: url("https://static.stereogum.com/uploads/2016/10/Kendrick-Lamar-in-the-Cypher-1476221238-640x360.jpg");
-    background-size: cover;
-    font-family: Arial; 
-    color: white;
-
-  
-}
 
 ul {
     margin: 0px;
@@ -279,321 +168,354 @@ ul li:hover ul li {
 
 
 
-    		.ReadMsgBody{
-    			width:100%;
-    			background-color:#ffffff;
-    		}
-    		.ExternalClass{
-    			width:100%;
-    			background-color:#ffffff;
-    		}
-    		body{
-    			width:100%;
-    			height:100%;
-    			background-color:#ffffff;
-    			margin:0;
-    			padding:0;
-    			-webkit-font-smoothing:antialiased;
-    		}
-    		html{
-    			width:100%;
-    			background-color:#ffffff;
-    		}
-    		p{
-    			padding:0!important;
-    			margin-top:0!important;
-    			margin-right:0!important;
-    			margin-bottom:0!important;
-    			margin-left:0!important;
-    		}
-    		.hover:hover{
-    			opacity:0.85;
-    			filter:alpha(opacity=85);
-    		}
-    		.underline:hover{
-    			text-decoration:underline!important;
-    		}
-    		#BtnTransp{
-    			background:rgba(255, 255, 255, 0.21);
-    		}
-    		#logo img{
-    			width:170px;
-    			height:auto;
-    		}
-    		.image600 img{
-    			width:600px;
-    			height:auto;
-    		}
-    		.img120 img{
-    			width:120px;
-    			height:auto;
-    		}
-    		.image176 img{
-    			width:176px;
-    			height:auto;
-    		}
-    		.image130 img{
-    			width:130px;
-    			height:auto;
-    		}
-    		.image110 img{
-    			width:110px;
-    			height:auto;
-    		}
-    		.image222 img{
-    			width:222px;
-    			height:auto;
-    		}
-    		.image167 img{
-    			width:167px;
-    			height:auto;
-    		}
-    		.image128 img{
-    			width:128px;
-    			height:auto;
-    		}
-    		.image285 img{
-    			width:285px;
-    			height:auto;
-    		}
-    		.image90 img{
-    			width:90px;
-    			height:auto;
-    		}
-    		.image34 img{
-    			width:34px;
-    			height:auto;
-    		}
-    		.image16 img{
-    			width:16px;
-    			height:auto;
-    		}
-    		.appleLinksWhite a {color: #ffffff !important; text-decoration: none;} 
-    		.appleLinksGrey a{color: rgb(88, 89, 91); font-size: 13px; text-decoration: none;}
-    	@media only screen and (max-width: 640px){
-    		body{
-    			width:auto!important;
-    		}
+        .ReadMsgBody{
+          width:100%;
+          background-color:#ffffff;
+        }
+        .ExternalClass{
+          width:100%;
+          background-color:#ffffff;
+        }
+        body{
+          width:100%;
+          height:100%;
+          background-color:#ffffff;
+          margin:0;
+          padding:0;
+          -webkit-font-smoothing:antialiased;
+        }
+        html{
+          width:100%;
+          background-color:#ffffff;
+        }
+        p{
+          padding:0!important;
+          margin-top:0!important;
+          margin-right:0!important;
+          margin-bottom:0!important;
+          margin-left:0!important;
+        }
+        .hover:hover{
+          opacity:0.85;
+          filter:alpha(opacity=85);
+        }
+        .underline:hover{
+          text-decoration:underline!important;
+        }
+        #BtnTransp{
+          background:rgba(255, 255, 255, 0.21);
+        }
+        #logo img{
+          width:170px;
+          height:auto;
+        }
+        .image600 img{
+          width:600px;
+          height:auto;
+        }
+        .img120 img{
+          width:120px;
+          height:auto;
+        }
+        .image176 img{
+          width:176px;
+          height:auto;
+        }
+        .image130 img{
+          width:130px;
+          height:auto;
+        }
+        .image110 img{
+          width:110px;
+          height:auto;
+        }
+        .image222 img{
+          width:222px;
+          height:auto;
+        }
+        .image167 img{
+          width:167px;
+          height:auto;
+        }
+        .image128 img{
+          width:128px;
+          height:auto;
+        }
+        .image285 img{
+          width:285px;
+          height:auto;
+        }
+        .image90 img{
+          width:90px;
+          height:auto;
+        }
+        .image34 img{
+          width:34px;
+          height:auto;
+        }
+        .image16 img{
+          width:16px;
+          height:auto;
+        }
+        .appleLinksWhite a {color: #ffffff !important; text-decoration: none;} 
+        .appleLinksGrey a{color: rgb(88, 89, 91); font-size: 13px; text-decoration: none;}
+      @media only screen and (max-width: 640px){
+        body{
+          width:auto!important;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		table[class=full]{
-    			width:100%!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        table[class=full]{
+          width:100%!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		table[class=mobile]{
-    			width:100%!important;
-    			padding-left:30px;
-    			padding-right:30px;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        table[class=mobile]{
+          width:100%!important;
+          padding-left:30px;
+          padding-right:30px;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		table[class=fullCenter]{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        table[class=fullCenter]{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		td[class=fullCenter]{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        td[class=fullCenter]{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		.erase{
-    			display:none;
-    		}
+    } @media only screen and (max-width: 640px){
+        .erase{
+          display:none;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		.buttonScale{
-    			float:none!important;
-    			text-align:center!important;
-    			display:inline-block!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        .buttonScale{
+          float:none!important;
+          text-align:center!important;
+          display:inline-block!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		.buttonScale2{
-    			float:none!important;
-    			text-align:center!important;
-    			display:inline-block!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        .buttonScale2{
+          float:none!important;
+          text-align:center!important;
+          display:inline-block!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		.image600 img{
-    			width:100%!important;
-    		}
+    } @media only screen and (max-width: 640px){
+        .image600 img{
+          width:100%!important;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		td[class=h40]{
-    			height:40px!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 640px){
+        td[class=h40]{
+          height:40px!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		*[class=h20]{
-    			width:100%!important;
-    			height:20px!important;
-    		}
+    } @media only screen and (max-width: 640px){
+        *[class=h20]{
+          width:100%!important;
+          height:20px!important;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		table[class=sponsor]{
-    			text-align:center;
-    			float:none;
-    			width:360px;
-    		}
+    } @media only screen and (max-width: 640px){
+        table[class=sponsor]{
+          text-align:center;
+          float:none;
+          width:360px;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		table[class=mcenter]{
-    			text-align:center;
-    			vertical-align:middle;
-    			clear:both!important;
-    			float:none;
-    			margin:0px!important;
-    		}
+    } @media only screen and (max-width: 640px){
+        table[class=mcenter]{
+          text-align:center;
+          vertical-align:middle;
+          clear:both!important;
+          float:none;
+          margin:0px!important;
+        }
     
-    }	@media only screen and (max-width: 640px){
-    		.pad20{
-    			padding-left:20px!important;
-    			padding-right:20px!important;
-    		}
+    } @media only screen and (max-width: 640px){
+        .pad20{
+          padding-left:20px!important;
+          padding-right:20px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		body{
-    			width:auto!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        body{
+          width:auto!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=full]{
-    			width:100%!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=full]{
+          width:100%!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=mobile]{
-    			width:100%!important;
-    			padding-left:20px;
-    			padding-right:20px;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=mobile]{
+          width:100%!important;
+          padding-left:20px;
+          padding-right:20px;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=fullCenter]{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=fullCenter]{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		td[class=fullCenter]{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        td[class=fullCenter]{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.erase{
-    			display:none;
-    		}
+    } @media only screen and (max-width: 479px){
+        .erase{
+          display:none;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.buttonScale{
-    			float:none!important;
-    			text-align:center!important;
-    			display:inline-block!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        .buttonScale{
+          float:none!important;
+          text-align:center!important;
+          display:inline-block!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.buttonScale2{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        .buttonScale2{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.eraseMob{
-    			display:none!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        .eraseMob{
+          display:none!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.font30{
-    			font-size:30px!important;
-    			line-height:34px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        .font30{
+          font-size:30px!important;
+          line-height:34px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.image600 img{
-    			width:100%!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        .image600 img{
+          width:100%!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.image128 img{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        .image128 img{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.image285 img{
-    			width:100%!important;
-    			text-align:center!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        .image285 img{
+          width:100%!important;
+          text-align:center!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		td[class=h40]{
-    			height:30px!important;
-    			clear:both;
-    		}
+    } @media only screen and (max-width: 479px){
+        td[class=h40]{
+          height:30px!important;
+          clear:both;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=mcenter]{
-    			text-align:center;
-    			vertical-align:middle;
-    			clear:both!important;
-    			float:none;
-    			margin:0px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=mcenter]{
+          text-align:center;
+          vertical-align:middle;
+          clear:both!important;
+          float:none;
+          margin:0px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		*[class=h20]{
-    			width:100%!important;
-    			height:20px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        *[class=h20]{
+          width:100%!important;
+          height:20px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=sponsor]{
-    			text-align:center;
-    			float:none;
-    			width:260px;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=sponsor]{
+          text-align:center;
+          float:none;
+          width:260px;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		table[class=mcenter2]{
-    			text-align:center;
-    			vertical-align:middle;
-    			clear:both!important;
-    			float:none;
-    			margin:0px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        table[class=mcenter2]{
+          text-align:center;
+          vertical-align:middle;
+          clear:both!important;
+          float:none;
+          margin:0px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.pad20{
-    			padding-left:20px!important;
-    			padding-right:20px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        .pad20{
+          padding-left:20px!important;
+          padding-right:20px!important;
+        }
     
-    }	@media only screen and (max-width: 479px){
-    		.w25{
-    			width:25px!important;
-    		}
+    } @media only screen and (max-width: 479px){
+        .w25{
+          width:25px!important;
+        }
     
-    }		body{
-    			background:none !important;
-    		}
+    } 
+
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #6d071a;
+  overflow: hidden;
+  top: 0px;
+  position: absolute;
+  background: transparent;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #6d071a;
+  color: white;
+}
+
+
+
